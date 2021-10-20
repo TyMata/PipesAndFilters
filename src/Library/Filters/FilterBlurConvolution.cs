@@ -49,7 +49,8 @@ namespace CompAndDel.Filters
                     result.SetColor(x, y, GetFilteredColor(sample));
                 }
             }
-
+            PictureProvider p = new PictureProvider();
+            p.SavePicture(result , @"C:\Mata\PipeAndFilters\PII_Pipes_Filters_Start\src\Program\Proceso\BlurConvultionFilter.jpg");
             return result;
         }
 

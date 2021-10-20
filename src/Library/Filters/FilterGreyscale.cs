@@ -31,7 +31,8 @@ namespace CompAndDel.Filters
                     result.SetColor(x, y, colorGris);
                 }
             }
-
+            PictureProvider p = new PictureProvider();
+            p.SavePicture(result , @"C:\Mata\PipeAndFilters\PII_Pipes_Filters_Start\src\Program\Proceso\GReyScaleFilter.jpg");
             return result;
         }
     }
